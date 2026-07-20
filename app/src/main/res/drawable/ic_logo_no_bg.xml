@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Main mark group: Roof / pin body (house-pin hybrid) -->
+    <path
+        android:pathData="M256,96 C262,96 268,98.5 273,103.5 L368,197 C378,207 384,220.5 384,235 C384,273 361.5,306 328,328 L266,388 C260.5,393 251.5,393 246,388 L184,328 C150.5,306 128,273 128,235 C128,220.5 134,207 144,197 L239,103.5 C244,98.5 250,96 256,96 Z">
+        <gradient
+            android:type="linear"
+            android:startX="256"
+            android:startY="96"
+            android:endX="256"
+            android:endY="388">
+            <item android:offset="0.0" android:color="#FFFFFFFF" />
+            <item android:offset="1.0" android:color="#FFEAF6F4" />
+        </gradient>
+    </path>
+
+    <!-- Inner cut-out: doorway that also reads as the pin's center dot -->
+    <path
+        android:pathData="M 256,240 m -46,0 a 46,46 0 1,1 92,0 a 46,46 0 1,1 -92,0">
+        <gradient
+            android:type="linear"
+            android:startX="210"
+            android:startY="194"
+            android:endX="302"
+            android:endY="286">
+            <item android:offset="0.0" android:color="#FF0F766E" />
+            <item android:offset="1.0" android:color="#FF0B5C56" />
+        </gradient>
+    </path>
+
+    <!-- Magnifying glass handle / search sweep, wrapping the base -->
+    <path
+        android:pathData="M188,356 C210,378 232,390 256,390 C280,390 302,378 324,356 L352,384 C316,420 286,434 256,434 C226,434 196,420 160,384 Z">
+        <gradient
+            android:type="linear"
+            android:startX="160"
+            android:startY="356"
+            android:endX="352"
+            android:endY="434">
+            <item android:offset="0.0" android:color="#FFFF8266" />
+            <item android:offset="1.0" android:color="#FFFF6B4A" />
+        </gradient>
+    </path>
+
+    <!-- Small handle accent dot to finish the magnifier motif -->
+    <path
+        android:fillColor="#FFFF6B4A"
+        android:pathData="M 256,240 m -14,0 a 14,14 0 1,1 28,0 a 14,14 0 1,1 -28,0" />
+
+</vector>
